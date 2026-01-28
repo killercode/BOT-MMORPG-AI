@@ -33,6 +33,7 @@ KEYCODES = {
     "SHIFT": 0x2A,
     "CTRL": 0x1D,
     "ALT": 0x38,
+    "1": 0x31,
 }
 
 
