@@ -100,6 +100,8 @@ Issues = "https://github.com/ruslanmv/BOT-MMORPG-AI/issues"
 bot-mmorpg-collect = "bot_mmorpg.scripts.collect_data:main"
 bot-mmorpg-train = "bot_mmorpg.scripts.train_model:main"
 bot-mmorpg-play = "bot_mmorpg.scripts.test_model:main"
+bot-mmorpg-play-android = "bot_mmorpg.scripts.test_model_android:main"
+bot-mmorpg-play-profile = "bot_mmorpg.scripts.test_model_profile:main"
 
 [build-system]
 requires = ["hatchling>=1.18.0"]
