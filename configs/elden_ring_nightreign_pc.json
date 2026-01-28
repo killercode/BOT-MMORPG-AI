@@ -1,0 +1,25 @@
+{
+  "name": "Elden Ring: Nightreign (PC)",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "screen_region": [0, 40, 1920, 1120],
+  "model_input": {
+    "width": 480,
+    "height": 270
+  },
+  "movement_keys": {
+    "forward": "W",
+    "back": "S",
+    "left": "A",
+    "right": "D"
+  },
+  "press_actions": {
+    "9": ["SPACE"],
+    "10": ["SHIFT"],
+    "11": ["E"],
+    "12": ["R"]
+  },
+  "notes": "Map press_actions to your keybinds (roll, sprint, interact, item). Update screen_region if using a different resolution."
+}

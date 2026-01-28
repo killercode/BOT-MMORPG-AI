@@ -1,0 +1,26 @@
+{
+  "name": "Diablo Immortal (Android/Emulator)",
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "model_input": {
+    "width": 480,
+    "height": 270
+  },
+  "movement": {
+    "center": [320, 860],
+    "radius": 140,
+    "duration_ms": 120
+  },
+  "tap_actions": {
+    "9": [1690, 880],
+    "10": [1780, 780],
+    "11": [1650, 720],
+    "12": [1780, 660]
+  },
+  "key_events": {
+    "27": "KEYCODE_BACK"
+  },
+  "notes": "Update coordinates to match your emulator layout. Movement uses swipe from joystick center."
+}

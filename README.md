@@ -28,6 +28,8 @@
 ### 🎮 Perfect For
 
 - **Genshin Impact** (Primary Support)
+- **Diablo Immortal** (Android/Emulator via ADB)
+- **Elden Ring: Nightreign** (PC profile)
 - **New World**
 - **World of Warcraft**
 - **Guild Wars 2**
@@ -144,7 +146,27 @@ make test-model
 
 **Boom!** Your AI is now playing for you! 🎉
 
+### 📱 Diablo Immortal (Android/Emulator)
+
+If you're playing Diablo Immortal via Android or an emulator, use the ADB runner after training a Diablo-specific model:
+
+```bash
+python -m bot_mmorpg.scripts.test_model_android \
+  --model artifacts/model/mmorpg_bot \
+  --profile configs/diablo_immortal_android.json
+```
+
 📖 **Need more help?** Check out our [detailed setup guide for gamers](USAGE.md)!
+
+### ⚔️ Elden Ring: Nightreign (PC)
+
+Use the profiled PC runner with the included Nightreign configuration:
+
+```bash
+python -m bot_mmorpg.scripts.test_model_profile \
+  --model artifacts/model/mmorpg_bot \
+  --profile configs/elden_ring_nightreign_pc.json
+```
 
 ---
 
@@ -164,6 +186,8 @@ make test-model
 
 ### Supported Games
 - ✅ **Genshin Impact** (Best Support)
+- ✅ Diablo Immortal (Android/Emulator via ADB)
+- ✅ Elden Ring: Nightreign (PC profile)
 - ✅ New World
 - ✅ World of Warcraft
 - ✅ Guild Wars 2

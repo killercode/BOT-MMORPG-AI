@@ -457,6 +457,62 @@ Got cool results? Share them!
 
 ---
 
+## 📱 Diablo Immortal (Android/Emulator) Setup
+
+Diablo Immortal runs on Android and can also be played through an emulator. This project includes an ADB-driven runner that can capture the device screen and replay actions based on the model output.
+
+### Step 1: Install Android Platform Tools
+
+1. Download **Android Platform Tools**: [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)
+2. Unzip the tools and add the folder to your PATH (or set `ADB_PATH`).
+3. Verify ADB works:
+
+```bash
+adb devices
+```
+
+You should see your emulator/device listed.
+
+### Step 2: Configure the On-Screen Controls
+
+Open `configs/diablo_immortal_android.json` and update the coordinates for your emulator layout:
+
+- `movement.center`: the virtual joystick center
+- `tap_actions`: ability buttons and skills
+- `key_events`: optional Android key events (like back)
+
+### Step 3: Run the Bot on Android/Emulator
+
+Once you have a trained model for Diablo Immortal gameplay, run:
+
+```bash
+python -m bot_mmorpg.scripts.test_model_android \
+  --model artifacts/model/mmorpg_bot \
+  --profile configs/diablo_immortal_android.json
+```
+
+**Tip:** If you have more than one device connected, pass `--device <serial>`.
+
+---
+
+## ⚔️ Elden Ring: Nightreign (PC) Setup
+
+The profiled runner supports PC titles with custom keybindings. Use the Nightreign profile as a starting point.
+
+### Step 1: Verify Keybinds
+
+Open `configs/elden_ring_nightreign_pc.json` and align `press_actions` with your in-game keybinds.
+
+### Step 2: Run the Profiled Bot
+
+```bash
+python -m bot_mmorpg.scripts.test_model_profile \
+  --model artifacts/model/mmorpg_bot \
+  --profile configs/elden_ring_nightreign_pc.json
+```
+
+---
+
 ## 📚 Additional Resources
 
 - **Main README**: [README.md](README.md) - Technical documentation
